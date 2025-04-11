@@ -1,0 +1,180 @@
+{
+  "legends": [
+    {
+      "playerId": 1,
+      "name": "Sachin Tendulkar",
+      "country": "India",
+      "image": "sachin_tendulkar.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 2500000,
+      "rating": 5.0
+    },
+    {
+      "playerId": 2,
+      "name": "Don Bradman",
+      "country": "Australia",
+      "image": "don_bradman.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 3000000,
+      "rating": 5.0
+    },
+    {
+      "playerId": 3,
+      "name": "Viv Richards",
+      "country": "West Indies",
+      "image": "viv_richards.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off spin",
+      "biddingPrice": 2200000,
+      "rating": 4.9
+    },
+    {
+      "playerId": 4,
+      "name": "Wasim Akram",
+      "country": "Pakistan",
+      "image": "wasim_akram.jpg",
+      "role": "Bowler",
+      "battingType": "Left-handed",
+      "bowlingType": "Left-arm fast",
+      "biddingPrice": 2000000,
+      "rating": 4.9
+    },
+    {
+      "playerId": 5,
+      "name": "Shane Warne",
+      "country": "Australia",
+      "image": "shane_warne.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 2300000,
+      "rating": 4.9
+    },
+    {
+      "playerId": 6,
+      "name": "Jacques Kallis",
+      "country": "South Africa",
+      "image": "jacques_kallis.jpg",
+      "role": "All-rounder",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm fast-medium",
+      "biddingPrice": 2100000,
+      "rating": 4.8
+    },
+    {
+      "playerId": 7,
+      "name": "Muttiah Muralitharan",
+      "country": "Sri Lanka",
+      "image": "muttiah_muralitharan.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off spin",
+      "biddingPrice": 1900000,
+      "rating": 4.9
+    },
+    {
+      "playerId": 8,
+      "name": "Brian Lara",
+      "country": "West Indies",
+      "image": "brian_lara.jpg",
+      "role": "Batsman",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 2400000,
+      "rating": 4.8
+    },
+    {
+      "playerId": 9,
+      "name": "Ricky Ponting",
+      "country": "Australia",
+      "image": "ricky_ponting.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 1800000,
+      "rating": 4.7
+    },
+    {
+      "playerId": 10,
+      "name": "Imran Khan",
+      "country": "Pakistan",
+      "image": "imran_khan.jpg",
+      "role": "All-rounder",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 2200000,
+      "rating": 4.8
+    },
+    {
+      "playerId": 11,
+      "name": "Kapil Dev",
+      "country": "India",
+      "image": "kapil_dev.jpg",
+      "role": "All-rounder",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm fast-medium",
+      "biddingPrice": 1700000,
+      "rating": 4.6
+    },
+    {
+      "playerId": 12,
+      "name": "Glenn McGrath",
+      "country": "Australia",
+      "image": "glenn_mcgrath.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm fast-medium",
+      "biddingPrice": 1900000,
+      "rating": 4.8
+    },
+    {
+      "playerId": 13,
+      "name": "Adam Gilchrist",
+      "country": "Australia",
+      "image": "adam_gilchrist.jpg",
+      "role": "Wicketkeeper-Batsman",
+      "battingType": "Left-handed",
+      "bowlingType": null,
+      "biddingPrice": 2000000,
+      "rating": 4.7
+    },
+    {
+      "playerId": 14,
+      "name": "MS Dhoni",
+      "country": "India",
+      "image": "ms_dhoni.jpg",
+      "role": "Wicketkeeper-Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 2300000,
+      "rating": 4.7
+    },
+    {
+      "playerId": 15,
+      "name": "Virat Kohli",
+      "country": "India",
+      "image": "virat_kohli.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 2600000,
+      "rating": 4.8
+    },
+    {
+      "playerId": 16,
+      "name": "Shakib Al Hasan",
+      "country": "Bangladesh",
+      "image": "shakib_al_hasan.jpg",
+      "role": "All-rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Left-arm orthodox spin",
+      "biddingPrice": 2100000,
+      "rating": 4.6
+    }
+  ]
+}

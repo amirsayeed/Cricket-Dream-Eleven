@@ -4,8 +4,8 @@ import { TbCoinFilled } from "react-icons/tb";
 
 const Navbar = () => {
     return (
-        <div>
-           <div className="navbar bg-base-100 shadow-sm p-2">
+        <div className='max-w-7xl mx-auto'>
+           <div className="navbar bg-base-100 p-2">
             <div className='flex-1'>
                 <img className='w-12 h-12' src={logo}/>
             </div>
