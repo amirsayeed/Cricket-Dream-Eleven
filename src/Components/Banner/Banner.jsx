@@ -1,7 +1,7 @@
 import React from 'react';
 import bgshadow from '../../assets/bg-shadow.png'
 import banner from '../../assets/banner-main.png'
-const Banner = () => {
+const Banner = ({handleCoin}) => {
     return (
         <div className='max-w-7xl mx-auto mt-10'>
             <div className="hero min-h-screen"
@@ -18,7 +18,7 @@ const Banner = () => {
                     <p className="mb-5">
                         Beyond Boundaries Beyond Limits.
                     </p>
-                    <button className="btn bg-[#E7FE29] rounded-2xl">Claim Free Credit</button>
+                    <button onClick={handleCoin} className="btn bg-[#E7FE29] rounded-2xl">Claim Free Credit</button>
                     </div>
                 </div>
             </div>

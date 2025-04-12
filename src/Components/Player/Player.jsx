@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaUser } from "react-icons/fa6";
 import { TiFlag } from "react-icons/ti";
-const Player = ({player}) => {
-    console.log(player)
+const Player = ({player,handleSelect}) => {
+    // console.log(player)
     const {image,name,country,role,rating,battingType,biddingPrice} = player;
     return (
         <div className="card bg-base-100 shadow-sm">
@@ -33,7 +33,7 @@ const Player = ({player}) => {
                     <div className='flex flex-col gap-2 text-center'>
                         <p>{rating}/5.0</p>
                         <p>{battingType}</p>
-                        <button className='btn'>Choose Player</button>
+                        <button onClick={()=>handleSelect(player,biddingPrice)} className='btn'>Choose Player</button>
                     </div>
                 </div>
             </div>

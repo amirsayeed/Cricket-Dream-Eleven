@@ -1,18 +1,44 @@
+import { useState } from 'react'
 import './App.css'
 import Available from './Components/Available/Available'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 
 function App() {
+  const [coins, setCoins] = useState(0);
+  const [selectPlayer, setSelectPlayer] = useState([]);
+  const [totalSelected, setTotalSelected] = useState(0);
+
+
+  const handleCoin = () =>{
+    const newCoins = coins + 500000;
+    setCoins(newCoins);
+  }
+
+  const handleSelect = (select,price) =>{
+    if(coins >= price){
+      setSelectPlayer([...selectPlayer,select]);
+      handleTotal();
+      setCoins(coins-price);
+    }else{
+      alert("Not enough credit!!!Please claim free credit.")
+    }
+  }
+
+  const handleTotal = ()=>{
+    setTotalSelected(totalSelected+1);
+  }
 
   return (
     <>
       <header>
-        <Navbar/>
-        <Banner/>
+        <Navbar coins={coins}/>
+        <Banner handleCoin={handleCoin}/>
       </header>
       <main>
-        <Available/>
+        <Available 
+          handleSelect={handleSelect}
+          totalSelected={totalSelected}/>
       </main>
     </>
   )

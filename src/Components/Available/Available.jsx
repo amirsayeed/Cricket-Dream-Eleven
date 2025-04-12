@@ -1,7 +1,7 @@
 import React from 'react';
 import Players from '../Players/Players';
 
-const Available = () => {
+const Available = ({handleSelect,totalSelected}) => {
     
     return (
         <div className='max-w-7xl mx-auto'>
@@ -11,11 +11,11 @@ const Available = () => {
                 </div>
                 <div className='flex'>
                     <button className='btn'>Available</button>
-                    <button className='btn'>Selected<span>(0)</span></button>
+                    <button className='btn'>Selected<span>({totalSelected})</span></button>
                 </div>
             </div>
             <div className='my-20'>
-                <Players/>
+                <Players handleSelect={handleSelect}/>
             </div>
         </div>
     );
