@@ -11,12 +11,13 @@ const Players = ({handleSelect}) => {
     },[])
 
     return (
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid grid-cols-2 gap-4'>
             {
-                players.map(player=><Player key={player.playerId}
-                                                 player={player}
-                                                 handleSelect={handleSelect}
-                                                 />)
+                players.map(player=><Player 
+                                        key={player.playerId}
+                                        player={player}
+                                        handleSelect={handleSelect}
+                                    />)
             }
         </div>
     );

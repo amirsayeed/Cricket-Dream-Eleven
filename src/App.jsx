@@ -21,7 +21,7 @@ function App() {
       handleTotal();
       setCoins(coins-price);
     }else{
-      alert("Not enough credit!!!Please claim free credit.")
+      alert("Not enough credit!!! Please claim free credit.")
     }
   }
 
@@ -38,7 +38,8 @@ function App() {
       <main>
         <Available 
           handleSelect={handleSelect}
-          totalSelected={totalSelected}/>
+          totalSelected={totalSelected}
+          selectPlayer={selectPlayer}/>
       </main>
     </>
   )

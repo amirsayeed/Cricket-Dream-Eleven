@@ -21,7 +21,7 @@ const Player = ({player,handleSelect}) => {
                         <span><TiFlag size={20} /></span>
                         <span>{country}</span>
                     </p>
-                    <button className='btn'>{role}</button>
+                    <div className='p-3 bg-gray-200 rounded-xl'>{role}</div>
                 </div>
                 <div className='border border-dashed border-gray-300 my-2'></div>
                 <div className='flex items-start justify-between'>
