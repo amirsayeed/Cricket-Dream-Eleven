@@ -1,6 +1,6 @@
 import React from 'react';
 import { RiDeleteBinLine } from "react-icons/ri";
-const SelectedPlayers = ({selectPlayer}) => {
+const SelectedPlayers = ({selectPlayer,handleRemove}) => {
     // console.log(selectPlayer);
     return (
         <div className='flex flex-col gap-3'>
@@ -13,7 +13,7 @@ const SelectedPlayers = ({selectPlayer}) => {
                         <p>{selected.battingType}</p>
                     </div>
                     </div>
-                    <button className='btn'><RiDeleteBinLine size={20}/></button>
+                    <button onClick={()=>handleRemove(selected.playerId)} className='btn'><RiDeleteBinLine size={20}/></button>
                 </div> )
             }
         </div>

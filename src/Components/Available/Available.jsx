@@ -2,7 +2,7 @@ import React from 'react';
 import Players from '../Players/Players';
 import SelectedPlayers from '../SelectedPlayers/SelectedPlayers';
 
-const Available = ({handleSelect,totalSelected,selectPlayer}) => {
+const Available = ({handleSelect,totalSelected,selectPlayer,handleRemove}) => {
     
     return (
         <div className='max-w-7xl mx-auto'>
@@ -20,7 +20,9 @@ const Available = ({handleSelect,totalSelected,selectPlayer}) => {
                 <Players handleSelect={handleSelect}/>
                 </div>
                 <div className='w-[40%]'>
-                    <SelectedPlayers selectPlayer={selectPlayer} />
+                    <SelectedPlayers 
+                    selectPlayer={selectPlayer}
+                    handleRemove={handleRemove} />
                 </div>
             </div>
         </div>

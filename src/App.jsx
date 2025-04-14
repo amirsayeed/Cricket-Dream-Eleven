@@ -9,7 +9,6 @@ function App() {
   const [selectPlayer, setSelectPlayer] = useState([]);
   const [totalSelected, setTotalSelected] = useState(0);
 
-
   const handleCoin = () =>{
     const newCoins = coins + 500000;
     setCoins(newCoins);
@@ -29,6 +28,11 @@ function App() {
     setTotalSelected(totalSelected+1);
   }
 
+  const handleRemove = (id) =>{
+    const remaining = selectPlayer.filter(pl=>pl.playerId!== id);
+    setSelectPlayer(remaining);
+  }
+
   return (
     <>
       <header>
@@ -39,7 +43,8 @@ function App() {
         <Available 
           handleSelect={handleSelect}
           totalSelected={totalSelected}
-          selectPlayer={selectPlayer}/>
+          selectPlayer={selectPlayer}
+          handleRemove={handleRemove}/>
       </main>
     </>
   )
