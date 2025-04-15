@@ -31,6 +31,7 @@ function App() {
   const handleRemove = (id) =>{
     const remaining = selectPlayer.filter(pl=>pl.playerId!== id);
     setSelectPlayer(remaining);
+    setTotalSelected(totalSelected-1);
   }
 
   return (

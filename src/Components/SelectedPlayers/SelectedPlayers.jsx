@@ -4,6 +4,7 @@ const SelectedPlayers = ({selectPlayer,handleRemove}) => {
     // console.log(selectPlayer);
     return (
         <div className='flex flex-col gap-3'>
+            <h3>Selected Players({selectPlayer.length}/6)</h3>
             {
                 selectPlayer.map((selected,idx)=><div key={idx} className='flex items-center justify-between gap-3 p-4 border rounded-2xl'>
                     <div className='flex gap-3'>

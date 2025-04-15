@@ -11,7 +11,11 @@ const Players = ({handleSelect}) => {
     },[])
 
     return (
-        <div className='grid grid-cols-2 gap-4'>
+        <div>
+            <div className='ml-10 mb-10'>
+                <h3 className='text-xl font-medium'>Available Players</h3>
+            </div>
+            <div className='grid grid-cols-3 gap-4'>
             {
                 players.map(player=><Player 
                                         key={player.playerId}
@@ -19,6 +23,7 @@ const Players = ({handleSelect}) => {
                                         handleSelect={handleSelect}
                                     />)
             }
+        </div>
         </div>
     );
 };
