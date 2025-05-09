@@ -5,9 +5,9 @@ const Player = ({player,handleSelect}) => {
     // console.log(player)
     const {image,name,country,role,rating,battingType,biddingPrice} = player;
     return (
-        <div className="card bg-base-100 shadow-sm">
-            <figure className='p-3'>
-                <img className='rounded-2xl w-[320px] h-[250px] object-cover'
+        <div className="card bg-gray-100 shadow-md hover:scale-105">
+            <figure className='p-4'>
+                <img className='rounded-2xl w-full h-[300px] object-cover'
                 src={image}
                 alt="Shoes" />
             </figure>
@@ -33,8 +33,10 @@ const Player = ({player,handleSelect}) => {
                     <div className='flex flex-col gap-2 text-center'>
                         <p>{rating}/5.0</p>
                         <p>{battingType}</p>
-                        <button onClick={()=>handleSelect(player,biddingPrice)} className='btn'>Choose Player</button>
                     </div>
+                </div>
+                <div className='card-actions justify-center mt-2'>
+                    <button onClick={()=>handleSelect(player,biddingPrice)} className='btn btn-primary rounded-2xl'>Choose Player</button>
                 </div>
             </div>
         </div>

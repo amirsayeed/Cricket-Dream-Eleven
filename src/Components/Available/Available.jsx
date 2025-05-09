@@ -7,30 +7,27 @@ const Available = ({handleSelect,totalSelected,selectPlayer,handleRemove}) => {
 
     const handleAddMore =()=>{
         setShowSelect(false);
-        return <Players/>
     }
 
     return (
         <div className='max-w-7xl mx-auto'>
-            <div className='flex items-center justify-end my-20'>
+            <div className='flex items-center justify-between my-20'>
+                <div className='pt-4'>
+                    {
+                        showSelect ? (<h3 className='text-2xl font-medium mb-5'>Selected Players ({selectPlayer.length}/6)</h3>) : (<h3 className='text-2xl font-medium'>Available Players</h3>)
+                    }
+                </div>
                 <div className='flex'>
                     <div>
-                        <button onClick={()=> setShowSelect(false)} className={`${!showSelect ? 'btn bg-yellow-400' : 'btn'}`} >Available</button>
+                        <button onClick={()=> setShowSelect(false)} className={`${!showSelect ? 'btn bg-[#E7FE29]' : 'btn'}`} >Available</button>
                     </div>
                     
-                    <button onClick={()=> setShowSelect(true)} className={`${showSelect ? 'btn bg-yellow-400' : 'btn'}`}>Selected<span>({totalSelected})</span></button>
+                    <div>
+                        <button onClick={()=> setShowSelect(true)} className={`${showSelect ? 'btn bg-[#E7FE29]' : 'btn'}`}>Selected ({totalSelected})</button>
+                    </div>
                 </div>
             </div>
-            {/* <div className='flex gap-5 my-20'>
-                <div className='w-[60%]'>
-                <Players handleSelect={handleSelect}/>
-                </div>
-                <div className='w-[40%]'>
-                    <SelectedPlayers 
-                    selectPlayer={selectPlayer}
-                    handleRemove={handleRemove} />
-                </div>
-            </div> */}
+
             <div className="my-10">
                 {
                 showSelect ? 

@@ -3,8 +3,7 @@ import { RiDeleteBinLine } from "react-icons/ri";
 const SelectedPlayers = ({selectPlayer,handleRemove,handleAddMore}) => {
     // console.log(selectPlayer);
     return (
-        <div className='ml-10 my-10'>
-            <h3 className='text-xl font-medium mb-5'>Selected Players ({selectPlayer.length}/6)</h3>
+        <div>
             <div className='flex flex-col gap-3'>
             {
                 selectPlayer.map((selected,idx)=><div key={idx} className='flex items-center justify-between gap-3 p-4 border rounded-2xl'>

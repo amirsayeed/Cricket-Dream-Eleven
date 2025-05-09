@@ -12,15 +12,12 @@ const Players = ({handleSelect}) => {
 
     return (
         <div>
-            <div className='ml-10 mb-10'>
-                <h3 className='text-xl font-medium'>Available Players</h3>
-            </div>
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-3 gap-5'>
             {
                 players.map(player=><Player 
-                                        key={player.playerId}
-                                        player={player}
-                                        handleSelect={handleSelect}
+                                    key={player.playerId}
+                                    player={player}
+                                    handleSelect={handleSelect}
                                     />)
             }
         </div>
