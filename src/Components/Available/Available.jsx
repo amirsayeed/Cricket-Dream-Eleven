@@ -28,7 +28,7 @@ const Available = ({handleSelect,totalSelected,selectPlayer,handleRemove}) => {
                 </div>
             </div>
 
-            <div className="my-10">
+            <div className="my-5">
                 {
                 showSelect ? 
                 (<div><SelectedPlayers 

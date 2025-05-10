@@ -4,6 +4,7 @@ import Available from './Components/Available/Available'
 import Banner from './Components/Banner/Banner'
 import Navbar from './Components/Navbar/Navbar'
 import { toast } from 'react-toastify';
+import Footer from './Components/Footer/Footer'
 
 function App() {
   const [coins, setCoins] = useState(0);
@@ -17,20 +18,22 @@ function App() {
   }
 
   const handleSelect = (select,price) =>{
-    if(coins >= price){
-      setSelectPlayer([...selectPlayer,select]);
-      toast.success("Congratulations! Player has been selected.")
-      handleTotal();
-      setCoins(coins-price);
-    }else{
+    if(coins >= price ){
+        if(totalSelected < 6){
+          setSelectPlayer([...selectPlayer, select]);
+          setCoins(coins-price);
+          setTotalSelected(totalSelected + 1);
+          toast.success("Congratulations! Player has been selected.")
+        }else{
+          toast.error("Maximum 6 players has already been selected");
+          return;
+        }
+    }
+    else{
       toast.error("Not enough credit!!! Please claim free credit.")
     }
   }
 
-  const handleTotal = ()=>{
-      setTotalSelected(totalSelected+1);
-      // toast.error('Maximum 6 players has already been selected!');
-  }
 
   const handleRemove = (id) =>{
     const remaining = selectPlayer.filter(pl=>pl.playerId!== id);
@@ -52,6 +55,9 @@ function App() {
           selectPlayer={selectPlayer}
           handleRemove={handleRemove}/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   )
 }
