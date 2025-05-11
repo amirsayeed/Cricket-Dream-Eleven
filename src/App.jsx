@@ -18,20 +18,29 @@ function App() {
   }
 
   const handleSelect = (select,price) =>{
-    if(coins >= price ){
+    const isPlayerExists = selectPlayer.find(player => player.playerId === select.playerId);
+
+    if(!isPlayerExists){
         if(totalSelected < 6){
-          setSelectPlayer([...selectPlayer, select]);
-          setCoins(coins-price);
-          setTotalSelected(totalSelected + 1);
-          toast.success("Congratulations! Player has been selected.")
-        }else{
-          toast.error("Maximum 6 players has already been selected");
-          return;
+          if(coins >= price){
+            setSelectPlayer([...selectPlayer, select]);
+            setCoins(coins-price);
+            setTotalSelected(totalSelected + 1);
+            toast.success("Congratulations! Player has been selected.")
+          }else{
+            toast.error("Not enough credit!!! Please claim free credit.")
+            return;
+          }
         }
+        else{
+            toast.error("Maximum 6 players has already been selected");
+            return;
+          }
+    }else{
+      toast.warn('Player has already been selected!');
+      return;
     }
-    else{
-      toast.error("Not enough credit!!! Please claim free credit.")
-    }
+    
   }
 
 
